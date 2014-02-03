@@ -1,0 +1,614 @@
+Connecting to database specified by database.yml
+Started GET "/home/index" for 176.123.255.67 at 2014-01-29 22:44:31 +0600
+
+ActionController::RoutingError (No route matches [GET] "/home/index"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  passenger (4.0.25) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.25) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.25) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.25) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+lib/active_support/callbacks.rb:405:in `_run__2353111003278434722__call__1634773571636078390__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  passenger (4.0.25) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.25) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.25) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.25) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+Started GET "/" for 176.123.255.67 at 2014-01-29 Started GET "/" for 1sing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (14.2ms)
+Completed 500 Internal Server Error in 102ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">
+    12:           <%= image_tag 'goat2.jpg' %>
+    13:           <div class="container">
+    14:             <div class="carousel-caption">
+    15:               <h1>Developing Cashmere</h1>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb___2342324540202592799_21883560'
+
+
+    15:               <h1>Developing Cashmere</h1>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb___2302075127173866014_23937780'
+
+
+  Rendered home/index.html.erb within layouts/appStarted GET "/" for 176.123.255.67 at 2014-01-29 22:45:35 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (37.9ms)
+Completed 500 Internal Server Error in 72ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">
+    12:           <%= image_tag 'goat2.jpg' %>
+    13:           <div class="container">
+    14:             <div class="carousel-caption">Started GET "/home/index" for 176.123.255.67 at 2014-01-29 22:46:44 +0600
+
+ActionController::RoutingError (No route matches [GET] "/home/index"):
+  actionpaStarted GET "/" for 176.123.255.67 at 2014-01-29 22:46:09 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">
+    12:           <%= image_tag 'goat2.jpg' %>
+    13:           <div class="container">
+    14:             <div class="carousel-caption">
+    15:               <h1>Developing Cashmere</h1>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb___3290624522000308963_35183500'
+
+
+che.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  passenger (4.0.25) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.25) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.25) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.25) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+Connecting to database specified by database.yml
+Started GET "/" for 176.123.255.67 at 2014-01-29 22:47:26 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (35.1ms)
+Completed 500 Internal Server Error in 62ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">
+    12:           <%= image_tag 'goat2.jpg' %>
+    13:           <div class="container">
+    14:             <div class="carousel-caption">
+    15:               <h1>Developing Cashmere</h1>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb__4061259507947311605_36245920'
+
+
+Started GET "/" for 176.123.255.67 at 2014-01-29 Started GET "/" for 176.123.255.67 at 2014-01-29 22:49:11 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">
+    12:           <%= image_tag 'goat2.jpg' %>
+    13:           <div class="container">
+    14:             <div class="carousel-caption">
+    15:               <h1>Developing Cashmere</h1>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb___2302075127173866014_23937460'
+
+
+thodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  passenger (4.0.25) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.25) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.25) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.25) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+Started GET "/home/index" for 176.123.255.67 at 2Started GET "/home/index" for 176.123.255.67 at 2014-01-29 22:51:31 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (34.4ms)
+Completed 500 Internal Server Error in 59ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">
+    12:           <%= image_tag 'goat2.jpg' %>
+    13:           <div class="container">
+    14:             <div class="carousel-caption">
+    15:               <h1>Developing Cashmere</h1>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb__4609359704832244954_32108620'
+
+
+rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  passenger (4.0.25) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.25) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.25) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.25) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+Started GET "/" for 176.123.255.67 at 2014-01-29 22:53:18 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">
+    12:           <%= image_tag 'goat2.jpg' %>
+    13:           <div class="container">
+    14:             <div class="carousel-caption">
+    15:               <h1>Developing Cashmere</h1>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb__4061259507947311605_36245920'
+
+
+Started GET "/" for 176.123.255.67 at 2014-01-29 22:53:19 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">
+    12:           <%= image_tag 'goat2.jpg' %>
+    13:           <div class="container">
+    14:             <div class="carousel-caption">
+    15:               <h1>Developing Cashmere</h1>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb__4061259507947311605_36245920'
+
+
+Started GET "/" for 176.123.255.67 at 2014-01-29 22:53:20 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (26.1ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">
+    12:           <%= image_tag 'goat2.jpg' %>
+    13:           <div class="container">
+    14:             <div class="carousel-caption">
+    15:               <h1>Developing Cashmere</h1>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb__4061259507947311605_36245920'
+
+
+
+Started GET "/" for 176.123.255.67 at 2014-01-29 22:52:40 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">
+    12:           <%= image_tag 'goat2.jpg' %>
+    13:           <div class="container">
+    14:             <div class="carousel-caption">
+    15:               <h1>Developing Cashmere</h1>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb___2302075127173866014_23937460'
+
+
+Started GET "/" for 176.123.255.67 at 2014-01-29 22:55:23 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">
+    12:           
+    13:           <div class="container">
+    14:             <div class="carousel-caption">
+    15:               <h1>Developing Cashmere</h1>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb___2302075127173866014_23937460'
+
+
+Started GET "/" for 176.123.255.67 at 2014-01-29 22:55:25 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">
+    12:           
+    13:           <div class="container">
+    14:             <div class="carousel-caption">
+    15:               <h1>Developing Cashmere</h1>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb___2302075127173866014_23937460'
+
+
+Started GET "/" for 176.123.255.67 at 2014-01-29 22:55:27 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">
+    12:           
+    13:           <div class="container">
+    14:             <div class="carousel-caption">
+    15:               <h1>Developing Cashmere</h1>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb___2302075127173866014_23937460'
+
+
+Started GET "/home/index" for 176.123.255.67 at 2014-01-29 22:55:32 +0600
+
+ActionController::RoutingError (No route matches [GET] "/home/index"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  passenger (4.0.25) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.25) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.25) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.25) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+Started GET "/home/index" for 176.123.255.67 at 2014-01-29 22:55:39 +0600
+
+ActionController::RoutingError (No route matches [GET] "/home/index"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  passenger (4.0.25) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.25) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.25) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.25) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+Started GET "/home/index" for 176.123.255.67 at 2014-01-29 22:55:40 +0600
+
+ActionController::RoutingError (No route matches [GET] "/home/index"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  passenger (4.0.25) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.25) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.25) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.25) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+k/cache/context.rb:51:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  passenger (4.0.25) lib/phusion_passenger/rack/thread_handler_extension.rb:77:in `process_request'
+  passenger (4.0.25) lib/phusion_passenger/request_handler/thread_handler.rb:140:in `accept_and_process_next_request'
+  passenger (4.0.25) lib/phusion_passenger/request_handler/thread_handler.rb:108:in `main_loop'
+  passenger (4.0.25) lib/phusion_passenger/request_handler.rb:441:in `block (3 levels) in start_threads'
+
+
+Started GET "/" for 176.123.255.67 at 2014-01-29 22:56:53 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">
+    12:           
+    13:           <div class="container">
+    14:             <div class="carousel-caption">
+    15:               <h1>Developing Cashmere</h1>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb___2302075127173866014_23937460'
+
+
+Started GET "/" for 176.123.255.67 at 2014-01-29 22:56:54 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">
+    12:           
+    13:           <div class="container">
+    14:             <div class="carousel-caption">
+    15:               <h1>Developing Cashmere</h1>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb___2302075127173866014_23937460'
+
+
+Started GET "/" for 176.123.255.67 at 2014-01-29 22:57:01 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">
+    12:           
+    13:           <div class="container">
+    14:             <div class="carousel-caption">
+    15:               <h1>Developing Cashmere</h1>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb___2302075127173866014_23937460'
+
+
+Started GET "/" for 176.123.255.67 at 2014-01-29 22:57:03 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">
+    12:           
+    13:           <div class="container">
+    14:             <div class="carousel-caption">
+    15:               <h1>Developing Cashmere</h1>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb___2302075127173866014_23937460'
+
+
+Started GET "/" for 176.123.255.67 at 2014-01-29 22:58:04 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">
+    12:           
+    13:           <div class="container">
+    14:             <div class="carousel-caption">
+    15:               <h1>Developing Cashmere</h1>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb__2492173649413623536_16463940'
+
+
+
+Started GET "/" for 176.123.255.67 at 2014-01-29 23:01:56 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">          
+    12:           <div class="container">
+    13:             <div class="carousel-caption">
+    14:               <h1>Developing Cashmere</h1>
+    15:               <p>More information to come</p>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb__4061259507947311605_36245920'
+
+
+Started GET "/" for 176.123.255.67 at 2014-01-29 23:01:58 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">          
+    12:           <div class="container">
+    13:             <div class="carousel-caption">
+    14:               <h1>Developing Cashmere</h1>
+    15:               <p>More information to come</p>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb__4061259507947311605_36245920'
+
+
+
+
+arted GET "/" for 176.123.255.67 at 2014-01-29 23:01:16 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">          
+    12:           <div class="container">
+    13:             <div class="carousel-caption">
+    14:               <h1>Developing Cashmere</h1>
+    15:               <p>More information to come</p>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb__2492173649413623536_16463940'
+
+
+Started GET "/" for 176.123.255.67 at 2014-01-29 23:03:48 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">          
+    12:           <div class="container">
+    13:             <div class="carousel-caption">
+    14:               <h1>Developing Cashmere</h1>
+    15:               <p>More information to come</p>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb__4061259507947311605_36245920'
+
+
+Started GET "/" for 176.123.255.67 at 2014-01-29 23:03:50 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">          
+    12:           <div class="container">
+    13:             <div class="carousel-caption">
+    14:               <h1>Developing Cashmere</h1>
+    15:               <p>More information to come</p>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb__4061259507947311605_36245920'
+
+
+Started GET "/" for 176.123.255.67 at 2014-01-29 23:03:51 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">          
+    12:           <div class="container">
+    13:             <div class="carousel-caption">
+    14:               <h1>Developing Cashmere</h1>
+    15:               <p>More information to come</p>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb__4061259507947311605_36245920'
+
+
+Started GET "/" for 176.123.255.67 at 2014-01-29 23:03:15 +0600
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (goat2.jpg isn't precompiled):
+    9:       </ol>
+    10:       <div class="carousel-inner">
+    11:         <div class="item active">          
+    12:           <div class="container">
+    13:             <div class="carousel-caption">
+    14:               <h1>Developing Cashmere</h1>
+    15:               <p>More information to come</p>
+  app/views/home/index.html.erb:12:in `_app_views_home_index_html_erb__4609359704832244954_32108620'
+
+
+'
+
+

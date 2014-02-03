@@ -1,4 +1,4 @@
-Bootstrap::Application.routes.draw do
+Obtc::Application.routes.draw do
   resources :emails, only: [:index, :show, :create] 
 
   get "home/index"
