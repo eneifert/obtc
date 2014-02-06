@@ -9,7 +9,7 @@
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          <%= image_tag 'goat2.jpg' %>
+          <img src="<%= img_url_for_env("goat2.jpg") %>" alt="">          
           <div class="container">
             <div class="carousel-caption">
               <h1>Developing Cashmere</h1>
@@ -19,7 +19,7 @@
           </div>
         </div>  
         <div class="item">
-          <%= image_tag 'computers.jpg' %>
+          <img src="<%= img_url_for_env("computers.jpg") %>" alt="">                    
           <div class="container">
             <div class="carousel-caption">
               <h1>Web Development</h1>
@@ -29,7 +29,7 @@
           </div>
         </div>  
         <div class="item">
-          <%= image_tag 'chalkboard.jpg' %>
+          <img src="<%= img_url_for_env("chalkboard.jpg") %>" alt="">                    
           <div class="container">
             <div class="carousel-caption">
               <h1>English Training</h1>
@@ -49,20 +49,20 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" style="width: 140px; height: 140px;" src="<%= image_url('sheep.jpg') %>">
+        <div class="col-lg-4">        
+          <img class="img-circle" style="width: 140px; height: 140px;" src="<%= img_url_for_env('sheep.jpg') %>">
           <h2>Cashmere</h2>
           <p>Kyrgyzstan has a great untapped resource and can produce some of the world's finnest cashmere. And it is our hope to make that happen.</p>
           <p><a class="btn btn-default" href="<%= projects_cashmere_url %>" role="button">View details »</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" alt="Image courtesy of phanlop88 / FreeDigitalPhotos.net" style="width: 140px; height: 140px;" src="<%= image_url('tablet.jpg') %>">
+          <img class="img-circle" alt="Image courtesy of phanlop88 / FreeDigitalPhotos.net" style="width: 140px; height: 140px;" src="<%= img_url_for_env('tablet.jpg') %>">
           <h2>Web Development</h2>
           <p>With the right tools you can earn an income from anywhere. Find out how you can become a web developer in a country where they are soon to be in high need.</p>
           <p><a class="btn btn-default" href="<%= projects_webdevelopment_url %>" role="button">View details »</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" alt="Image courtesy of bplanet / FreeDigitalPhotos.net" style="width: 140px; height: 140px;" src="<%= image_url('education.jpg') %>">
+          <img class="img-circle" alt="Image courtesy of bplanet / FreeDigitalPhotos.net" style="width: 140px; height: 140px;" src="<%= img_url_for_env('education.jpg') %>">
           <h2>English Training</h2>
           <p>Learning a language can change a life, which is why we want to make sure that people are learning well. By helping the teachers in Osh improve their language and ciriculums we can have an impact on thousands of students. Find out more below.</p>
           <p><a class="btn btn-default" href="<%= projects_english_url %>" role="button">View details »</a></p>
