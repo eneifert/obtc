@@ -1,5 +1,6 @@
 Obtc::Application.routes.draw do
-  resources :emails, only: [:index, :show, :create] 
+  get "emails/success", to: "emails#success"
+  resources :emails  
 
   get "home/index"
   get "about", to: "home#about" 
