@@ -10,12 +10,15 @@ class EmailsController < ApplicationController
     @email = Email.find(params[:id])
   end
 
+  def success    
+  end
+
   def create    
      @email = Email.new(params[:email].permit(:name, :email, :message))
 
      if @email.save
       ContactMailer.obtc_message(@email).deliver
-      redirect_to @email
+      redirect_to :action => 'success'
      else      
         flash[:email] = @email
         redirect_to :back      
