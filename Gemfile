@@ -40,6 +40,8 @@ end
 
 gem 'pg'
 
+gem "letter_opener", :group => :development
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 

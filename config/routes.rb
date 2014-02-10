@@ -11,7 +11,7 @@ Obtc::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  get "mail", to: redirect {"https://webmail.webfaction.com/"}
+  get "mail", "email", to: redirect {"https://webmail.webfaction.com/"}
 
   # You can have the root of your site routed with "root"
   root 'home#index'
