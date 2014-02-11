@@ -20,4 +20,16 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  projects: "Projects"
+  cashmere: "cashmere"
+  webdevelopment: "Web Development"
+  english: "English"
+  about: "About"
+  contact: "Contact"
+  back_to_top: "Back to top"
+
+  developing_cashmere: "Developing Cashmere" 
+  more_info_to_come: "More information to come"
+  find_out_more: "Find out more"  
+  english_training: "English Training"
+

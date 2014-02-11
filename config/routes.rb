@@ -1,4 +1,7 @@
 Obtc::Application.routes.draw do
+
+scope "(:locale)", locale: /en|ru|kg/ do
+
   get "emails/success", to: "emails#success"
   resources :emails  
 
@@ -14,8 +17,13 @@ Obtc::Application.routes.draw do
 
   get "mail", "email", to: redirect {"https://webmail.webfaction.com/"}
 
-  # You can have the root of your site routed with "root"
-  root 'home#index'
+  # You can have the root of your site routed with "root"  
+  get '/:locale' => 'home#index'
+  root :to => 'home#index', :as => :root_with_locale
+end
+
+  root :to => 'application#detect_language'
+  # root 'home#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -10,7 +10,7 @@ class EmailsController < ApplicationController
     @email = Email.find(params[:id])
   end
 
-  def success    
+  def success        
   end
 
   def create    
@@ -19,7 +19,7 @@ class EmailsController < ApplicationController
      if @email.save
       ContactMailer.obtc_message(@email).deliver
       redirect_to :action => 'success'
-     else      
+     else              
         flash[:email] = @email
         redirect_to :back      
      end
