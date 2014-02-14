@@ -38,36 +38,3 @@
   height: 60px;
   width: 500px;  
 }
-.logo img {
-  content: url("logo.png");
-  max-width: 100%;
-  max-heigth: 100%;
-}
-
-@media (max-width: 995px) {
-  .logo {
-    height: 60px;
-    width: 335px;
-    
-  }
-
-  .logo img {
-    content: url("logo_med.png");   
-  }
-}
-
-@media (max-width: 770px) {
-  .logo {
-    height: 60px;
-    width: 195px;
-    
-  }
-
-  .logo img {
-    content: url("logo_small.png");   
-  }
-
-  .navbar-right {
-    margin-top:0px;
-  }
-}
