@@ -1,6 +1,6 @@
 <div class="row contact-us">
 	<div class="col-md-5">
-		<h2>Contact Us</h2>
+		<h2><%= t :contact_us %></h2>
 		<img class="featurette-image img-responsive" alt="Image courtesy of bplanet / FreeDigitalPhotos.net"  src="<%= img_url_for_env('handshake.jpg')  %>">
 	</div>
 	<div class="col-md-7">
@@ -15,12 +15,12 @@
 
 				<div class="form-group">
 				 	<%= email.label :name %>
-					<%= email.text_field :name, :placeholder=>"Name", :class=>"form-control" %>	
+					<%= email.text_field :name, :placeholder=> t(:name), :class=>"form-control" %>	
 					<%= validation_message_for(@email, :name) %>
 				</div>
 				<div class="form-group">
 					<%= email.label :email %>
-					<%= email.text_field :email, :placeholder=>"Email", :class=>"form-control" %>
+					<%= email.text_field :email, :placeholder=> t(:email), :class=>"form-control" %>
 					<%= validation_message_for(@email, :email) %>
 				</div>
 				<div class="form-group">
@@ -31,7 +31,7 @@
 
 				<input type="hidden" name="return_path" value="<%= defined?(@return_path) ? @return_path : controller_name + '/' +action_name %>">
 
-				<button type="submit" class="btn btn-primary">Submit</button>			
+				<button type="submit" class="btn btn-primary"><%= t :submit %></button>			
 	 		 
 		<% end %>
 	

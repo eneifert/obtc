@@ -28,10 +28,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="<%= root_with_locale_path(:locale => I18n.locale) %>"><img src="<%= img_url_for_env("logo.png") %>" alt="" ></a>
+              <a class="navbar-brand" href="<%= root_with_locale_path(:locale => I18n.locale) %>"><div class="logo" alt="" ><img /></div></a>
             </div>
             <div class="navbar-collapse collapse navbar-right">
               <ul class="nav navbar-nav">
+                <li>                
+                  <% if I18n.locale == :en %>
+                    <a href="<%= root_with_locale_path(:locale => 'ru') %>">Русский язык</a>                                
+                  <% else %>
+                    <a href="<%= root_with_locale_path(:locale => 'en') %>">English</a>              
+                  <% end %>
+                </li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= t :projects %> <b class="caret"></b></a>
                   <ul class="dropdown-menu">
@@ -39,8 +46,7 @@
                     <li><a href="<%= projects_webdevelopment_url %>"><%= t :webdevelopment %></a></li>
                     <li><a href="<%= projects_english_url %>"><%= t :english %></a></li>                    
                   </ul>
-                </li>                
-                <li><a href="<%= about_url %>"><%= t :about %></a></li>
+                </li>                                
                 <li><a href="<%= contact_url %>"><%= t :contact %></a></li>                
               </ul>
             </div>

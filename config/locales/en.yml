@@ -1,27 +1,6 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
   projects: "Projects"
-  cashmere: "cashmere"
+  cashmere: "Cashmere"
   webdevelopment: "Web Development"
   english: "English"
   about: "About"
@@ -33,3 +12,37 @@ en:
   find_out_more: "Find out more"  
   english_training: "English Training"
 
+  view_details: "View details"
+  cashmere_short_promo: "Kyrgyzstan has a great untapped resource and can produce some of the world's finnest cashmere. And it is our hope to make that happen"
+  webdev_short_promo: "With the right tools you can earn an income from anywhere. Find out how you can become a web developer in a country where they are soon to be in high need."
+  english_short_promo: "Learning a language can change a life, which is why we want to make sure that people are learning well. By helping the teachers in Osh improve their language and curriculums we can have an impact on thousands of students. Find out more below."
+  developing_programmers: "Developing Programmers"  
+  changing_lives: "Changing Lives."  
+  developing_teachers: "Developing Teachers"
+
+  programming_main_html: |
+      Almost every household in Kyrgyzstan now has a computer and businesses are rapidly seeking to modernize. While the internet remains a vast untapped resource, many companies are taking advantage of the lack of competition and making a name for themselves. But where will the next generation of developers come from?<br><br>
+      Enter the <strong>OBTC</strong>. In August of 2014 we hope to open a teaching center that will focus on raising up the business men and women who will be able to take advantage of this great opportunity.<br><br>
+      We are still looking for potential investors, so if you would like to jump on board and help develop this important industry, fill out the contact form below             
+  cashmere_main_html: |
+      Kyrgyzstan has some of the best Cashmere in the world, but unfortunately the cashmere industry is not YET developed here so many families don't know how to properly collect their cashmre and the ones that do end up selling it for much less than it is worth. </br></br>
+      Enter the <strong>OBTC</strong>. Our hope is to open a cashmere processing factory here in southern Kyrgyzstan. But first we need to develop clients to buy the cashmere and train the local shepherds on how to collect and improve the quaility of the cashmere even more!</br></br>
+      We are still looking for potential investors, so if you would like to jump on board and help develop this important industry, fill out the contact form below             
+  english_main_html: |
+      The English language is a highly sought skill as many here in Kyrgyzstan seek to do more business with the outside world. When someone learns English their chances of doing more business and earning a higher income raise drastically.</br></br>
+      Enter the <strong>OBTC</strong>. Our goal is to help the English teachers here in Osh not only improve their own language skills but to also help them improve their ciriculums so that they will be able to better prepare their students for a rapidily shirking world.</br></br>
+      We are still looking for potential investors, so if you would like to jump on board and help develop this important industry, fill out the contact form below             
+
+  contact_info: Contact information  
+  contact_us: Contact Us
+  submit: Submit
+  name: Name  
+  email: Email
+  email_success: Thanks for writing us, hopefully someone should get gack to you soon!
+
+  helpers:
+    label:
+      email:
+        name: Name
+        email: Email
+        message: Message
