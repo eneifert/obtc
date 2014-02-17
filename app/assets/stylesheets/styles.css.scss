@@ -7,6 +7,10 @@
        url('glyphicons-halflings-regular.svg') format('svg');
 }
 
+.navbar {
+  margin: 0px;
+}
+
 .large-font {
 	font-size: 50px;
 }
@@ -31,10 +35,17 @@
 }
 
 .main-container {
-  margin-top:90px;
+  
 }
 
 .logo {
   height: 60px;
   width: 500px;  
+}
+
+@media (max-width: 768px) {
+  .hide_on_mobile {
+    display:none;
+  }
+
 }
