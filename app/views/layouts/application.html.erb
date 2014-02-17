@@ -19,35 +19,34 @@
   </script>
 
   <style type="text/css">
-    .logo img {
-      content: url('<%= img_url_for_env("logo.png") %>');
-      max-width: 100%;
-      max-heigth: 100%;
+    .logo {
+      display: block;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background: url('<%= img_url_for_env("logo.png") %>') no-repeat;
+      width: 500px; /* Width of new image */
+      height: 60px; /* Height of new image */
+      padding-left: 500px; /* Equal to width of new image */
     }
 
-    @media (max-width: 995px) {
+    @media (max-width: 995px) {      
       .logo {
-        height: 60px;
-        width: 335px;
-        
-      }
-
-      .logo img {
-        content: url('<%= img_url_for_env("logo_med.png") %>');
+        background: url('<%= img_url_for_env("logo_med.png") %>') no-repeat;
+        width: 335px; /* Width of new image */
+        height: 60px; /* Height of new image */
+        padding-left: 335px; /* Equal to width of new image */        
       }
     }
     
     @media (max-width: 770px) {
       .logo {
+        background: url('<%= img_url_for_env("logo_small.png") %>') no-repeat;
         height: 60px;
-        width: 195px;
+        width: 195px;              
+        padding-left: 195px; /* Equal to width of new image */        
         
       }
-
-      .logo img {
-        content: url('<%= img_url_for_env("logo_small.png") %>');
-      }
-
+      
       .navbar-right {
         margin-top:0px;
       }
@@ -64,7 +63,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="<%= root_with_locale_path(:locale => I18n.locale) %>"><div class="logo" alt="" ><img /></div></a>
+              <a class="navbar-brand" href="<%= root_with_locale_path(:locale => I18n.locale) %>"><img class="logo" /></a>
             </div>
             <div class="navbar-collapse collapse navbar-right">
               <ul class="nav navbar-nav">
