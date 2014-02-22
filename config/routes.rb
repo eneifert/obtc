@@ -1,5 +1,6 @@
 Obtc::Application.routes.draw do
 
+  get "staff/eric"
 scope "(:locale)", locale: /en|ru|kg/ do
 
   get "emails/success", to: "emails#success"
@@ -14,6 +15,9 @@ scope "(:locale)", locale: /en|ru|kg/ do
   get "projects/english"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
+
+  get "eric", to: "staff#eric"
+
 
   get "mail", "email", to: redirect {"https://webmail.webfaction.com/"}
 
