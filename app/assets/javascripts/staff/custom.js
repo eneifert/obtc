@@ -85,10 +85,13 @@ $(document).ready(function(e) {
         },
         barColor: function(percent){
 
-          if(percent > 80) return '#ff675f';          
-          else if(percent > 65) return '#fe8a83';
-          return '#fdcecb';
+          if(percent > 80) return '#ff2f24';          
+          else if(percent > 70) return '#ff4c43';
+          else if(percent > 60) return '#fe5e56';
+          else if(percent > 50) return '#fd938e';
+          return '#feb1ad';
         },
+        
 
 
 

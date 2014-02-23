@@ -17,7 +17,7 @@
 	5. Menu Style
 	6. About me Style
 	7. Technical Skills Style
-	8. Work Experience Style
+	8. Work experience Style
 	9. Education Style
 	10. Protfolio Style
 	11. Get in tuch Style
@@ -565,29 +565,29 @@ header{
 
 
 /*----------------------------------------------------
- 8.	Work Experience Style
+ 8.	Work experience Style
 ------------------------------------------------------*/
-.exprience{
+.experience{
 	background:#fff;
 }
-.exprience .container{
+.experience .container{
 	padding-top:85px ;
 	padding-bottom:90px ;
 }
 
-.exprience h2{
+.experience h2{
 	color:#ff675f;
 }
-.exprience p{
+.experience p{
 	color:#84868d;
 	/*font-size:13px;*/
 	line-height:18px;
 }
-.exprience .heading p{
+.experience .heading p{
 	padding-bottom:41px;
 }
 
-.exprience h4{
+.experience h4{
 	font-weight:700;
 }
 
@@ -1325,3 +1325,10 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	z-index: 100;
 }
 
+.experience a {
+	color: #136F9E;
+}
+.experience .glyphicon-asterisk {
+	margin-left: -20px;
+	margin-right: 5px;
+}
