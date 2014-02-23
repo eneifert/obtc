@@ -297,36 +297,21 @@
                     <div class="portfolioFilter">
                       <ul>
                         <li><a href="#" data-filter="*" class="current">All</a></li>
-                        <li><a href="#" data-filter=".photos">Photos</a></li>
-                        <li><a href="#" data-filter=".branding">Branding</a></li>
-                        <li><a href="#" data-filter=".illustration">Illustration</a></li>
+                        <li><a href="#" data-filter=".eswebtech">OBTC / EsWebTech</a></li>
+                        <li><a href="#" data-filter=".ritter">Ritter IM</a></li>
+                        <li><a href="#" data-filter=".westfalia">Westfalia</a></li>
                       </ul>
                     </div>
-                    <ul class="portfolioContainer row">
-                      <li class="photos col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                        <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/1.jpg" title="Project Title1" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="#" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="http://placehold.it/450x450&text=image1" alt=""  > </div>
-                      </li>
-                      <li class="branding illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                        <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/2.jpg" title="Project Title2" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="#" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="http://placehold.it/450x450&text=image2" alt="" > </div>
-                      </li>
-                      <li class="illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                        <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/3.jpg" title="Project Title3" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="#" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="http://placehold.it/450x450&text=image3" alt="" > </div>
-                      </li>
-                      <li class="branding illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                        <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/4.jpg" title="Project Title4" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="#" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="http://placehold.it/450x450&text=image4" alt="" > </div>
-                      </li>
-                      <li class="illustration photos col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                        <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/5.jpg" title="Project Title5" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="#" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="http://placehold.it/450x450&text=image5" alt="" > </div>
-                      </li>
-                      <li class="branding photos col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                        <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/6.jpg" title="Project Title6" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="#" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="http://placehold.it/450x450&text=image6" alt="" > </div>
-                      </li>
-                      <li class="illustration photos col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                        <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/7.jpg" title="Project Title7" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="#" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="http://placehold.it/450x450&text=image7" alt="" > </div>
-                      </li>
-                      <li class="branding col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                        <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/8.jpg" title="Project Title8" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="#" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="http://placehold.it/450x450&text=image8" alt="" > </div>
-                      </li>
+                    <ul class="portfolioContainer row">                      
+                      <%= render partial: "staff/portfolio", locals: {img: 'obtc.jpg', big: 'obtc_big.jpg', title: 'Osh Business and Training Center', link: 'obtc.kg', filter: 'eswebtech'} %>
+                      <%= render partial: "staff/portfolio", locals: {img: 'zendesk_api.jpg', big: 'zendesk_api_big.jpg', title: 'Zendesk C# Api', link: 'https://github.com/eneifert/ZendeskApi_v2', filter: 'eswebtech'} %>
+                      <%= render partial: "staff/portfolio", locals: {img: 'medicareful.jpg', big: 'medicareful_big.jpg', title: 'Medicareful.com',  link: 'medicareful.com', filter: 'ritter'} %>
+                      <%= render partial: "staff/portfolio", locals: {img: 'Agent_Payments.jpg', big: 'Agent_Payments_big.jpg', title: 'Ritter Agent Payments System', link: '', filter: 'ritter'} %>
+                      <%= render partial: "staff/portfolio", locals: {img: 'ccm.jpg', big: 'ccm_big.jpg', title: 'Colonel Compassion House',  link: '', filter: 'eswebtech'} %>
+                      <%= render partial: "staff/portfolio", locals: {img: 'quoteengine.jpg', big: 'quoteengine_big.jpg', title: 'Insurance Quote Engine',  link: '', filter: 'ritter'} %>
+                      <%= render partial: "staff/portfolio", locals: {img: 'zendesk.jpg', big: 'zendesk_big.jpg', title: 'Zendesk Support System',  link: '', filter: 'ritter'} %>                      
+                      <%= render partial: "staff/portfolio", locals: {img: 'mobilepicking.jpg', big: 'mobilepicking_big.jpg', title: 'Mobile Warehouse Software',  link: '', filter: 'westfalia'} %>
+                      
                     </ul>
                   </div>
                 </section>
@@ -340,6 +325,7 @@
                     </div>
                   </div>
                   <div class="row mapArea">
+                    <div class="osh" style="display: block; background: url('<%= img_url_for_env("staff/osh.jpg") %>') no-repeat; width: 100%; height: 400px;"></div>
                     <!-- <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&amp;ll=-37.817682,144.957595&amp;spn=0.01134,0.026157&amp;t=m&amp;z=16&amp;output=embed"></iframe> -->
                   </div>
                 </section>
