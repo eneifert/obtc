@@ -46,3 +46,92 @@ en:
         name: Name
         email: Email
         message: Message
+
+# Resume
+  eric_neifert: Eric Neifert
+
+  skills: Skills
+  experience: Experience
+  education: Education
+  portfolio: Portfolio
+
+  about_me: About Me
+  about_me_intro: a small introduction about myself
+  web_dev_from_pa: Web Developer from Dillsburg, PA United States
+  eric_intro_html: |
+      <p>I am web developer who loves God, my family, sports, and making things that make people's lives better. Right now I am working on training the next generation of web developers in the county of Kyrgyzstan and also doing various side projects. I have a wife who is not only awesome but also is great at graphic design works with me on various projects. I also have a 1 year old son who is a cool little guy who loves technology.</p>
+      <p>If I work with you, I truly want to make your business better and thinking through how we can use technology to do that is very exciting for me.</p>
+      <p>On this page you can find out more about my history and experiences as a programmer. If you would like to work together please fill out the contact form <a href="#contact">here</a></p>
+  download_resume: Download a Printable Resume
+  technical_skills: Technical Skills
+  things_im_good_at: Here are things I'm good at
+  work_experience: Work Experience
+  employment_history: My employment history
+  current: Present
+  osh_business_eswebtech: Osh Business and Training Center / EsWebTech.com
+  web_developer: Web Developer
+
+  work_hs_eswebtech_html: |
+      <p><span class="glyphicon glyphicon-asterisk"></span>Right now I’m creating a web development training center in Osh Kyrgyzstan and also and taking personal contact jobs. You can find out more at <a href="obtc.kg">obtc.kg</a> and <a href="eswebtech.com">eswebtech.com</a></p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>ZenDesk Api: Zendesk is the largest helpdesk company in the world and they contracted me to develop their c# api wrapper. The project can be seen <a href="https://github.com/eneifert/ZendeskApi_v2">here</a></p> 
+
+  ritter_im: Ritter Insurance Marketing
+  work_hs_ritter_html: |
+      <p><span class="glyphicon glyphicon-asterisk"></span>Worked with a team of developers to develop C# MVC programs to assist the insurance marketing department</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Created the RAP project from scratch that was responsible for paying over 2000 employees each month</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Was one of two developers responsible for the <a href="medicareful.com">Medicareful.com</a> project</p>
+  osh_business_center: Osh Business and Training Center
+  team_member: Team Member
+  work_hs_obtc_html: |
+    <p><span class="glyphicon glyphicon-asterisk"></span>Worked with the OBTC to develop businesses and hand them over to locals</p>
+    <p><span class="glyphicon glyphicon-asterisk"></span>Developed a flexible language learning program in C# and a fully customizable keyboard using macro scripts. These programs as well as some of my other language resources are used by dozens of people all throughout Kyrgyzstan and by other team members in Asia</p>
+    <p><span class="glyphicon glyphicon-asterisk"></span>Worked as a network administrator </p>
+  cragsoft: Cragsoft
+  co_founder: Co-Founder
+  work_hs_cragsoft_html: |
+      <p><span class="glyphicon glyphicon-asterisk"></span>Designed and developed several Facebook applications that gathered over 1,000,000 users</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Developed many of the web services and tests that would geocode addresses and visually map the data in useable results for Cragsoft's vehicle routing software</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Spoke with potential clients, gathered information, compiled reports, and gave product demonstrations</p>
+  westfalia: Westfalia Technologies
+  software_developer: Software Developer
+  work_hs_westfalia_html: |
+      <p><span class="glyphicon glyphicon-asterisk"></span>Worked on the base team developing their flagship warehouse management software using C#. Developed code for the user interface, core services, hand held devices, and also wrote many advanced SQL queries</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Deployed, tested, and troubleshot the software on live multimillion dollar warehouses and successfully met  customer deadlines</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>During my first two weeks on a live site I identified a subtle database transaction problem and worked with my team on a solution that increased the throughput of the automated system by over 100% at Fage Yogurt</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Reverse engineered a TCP/IP interface to a bar code scanner and integrated it into our system</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Researched and wrote papers to other staff members explaining interesting concepts  in the .Net language</p>  
+
+  internship: Internship    
+  tech_harm: Tech harmony
+  work_hs_tech_harm_html: |
+      <p><span class="glyphicon glyphicon-asterisk"></span>Designed and developed web applications for clients using ASP.Net</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Worked with SQL databases</p>
+  genesis_sys: Genesis Systems
+  work_hs_gen_html: |
+      <p><span class="glyphicon glyphicon-asterisk"></span>Designed and developed medical record software for HUP using C#</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Co-designed and implemented a large relational database</p>
+  perfect_order: Perfect Order
+  support_tech: Support Technician
+  work_hs_perfect_html: |
+      <p><span class="glyphicon glyphicon-asterisk"></span>Designed and implemented web applications using PHP</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Fixed bugs and errors in software</p>
+  education_dip: Education & Diplomas
+  what_i_did_in_school: What I have done in my academic career
+  eric_school_info_html: |
+      <h4>Bachelor's degree in Computer Science</h4>
+      <h5>Shippensubrg University of PA</h5>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Graduated with honors in Computer Science from Shippensburg University of Pennsylvania</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Served as an officer for Upsilon Pi Epsilon. This is a nationwide Honors Society for the top students in the Computing and Information Disciplines</p> 
+  sample_of_works: Here's a sample of my works over the years
+  all: All
+  obtc_eswebtech: OBTC / EsWebTech
+  ritter_im_short: Ritter IM
+
+  get_in_touch: Get in Touch
+  want_to_chat: Please feel free if you would like to chat
+  contact_details: Contact Details
+  osh_kg: Osh Kyrgyzstan
+
+  write_me: Shoot a message!
+  send_message: Send Message
+  message: Message

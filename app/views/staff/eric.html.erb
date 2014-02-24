@@ -6,7 +6,7 @@
 <!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]--><head>
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Eric Neifert</title>
+<title><%= t :eric_neifert %></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <%= stylesheet_link_tag "staff/bootstrap", "staff/font-awesome", "staff/jquery-ui-1.8.16.custom", "staff/lightbox.min", "staff/slideshow", "staff/style", "data-turbolinks-track" => true %>
@@ -17,7 +17,7 @@
   <%= stylesheet_link_tag "/staff/fallback.css", "data-turbolinks-track" => true %>  
 </noscript>
     <!--[if lt IE 9]>
-		<%= stylesheet_link_tag "/staff/fallback.css", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag "/staff/fallback.css", "data-turbolinks-track" => true %>
     <![endif]-->
     </head>
     <body data-spy="scroll" data-target=".main-menu">
@@ -36,12 +36,12 @@
                       <a class="navbar-brand" href="#">Menu</a> </div>
                       <div class="navbar-collapse collapse main-menu">
                         <ul class="nav navbar-nav">                          
-                          <li class="menuItem active"><a href="#aboutme">About</a></li>
-                          <li class="menuItem"><a href="#technical">Skills</a></li>
-                          <li class="menuItem"><a href="#experience">experience</a></li>
-                          <li class="menuItem"><a href="#education">Education</a></li>
-                          <li class="menuItem"><a href="#protfolio">Portfolio</a></li>
-                          <li class="menuItem"><a href="#contact">Contact</a></li>
+                          <li class="menuItem active"><a href="#aboutme"><%= t :about %></a></li>
+                          <li class="menuItem"><a href="#technical"><%= t :skills %></a></li>
+                          <li class="menuItem"><a href="#experience"><%= t :exoerience %></a></li>
+                          <li class="menuItem"><a href="#education"><%= t :education %></a></li>
+                          <li class="menuItem"><a href="#protfolio"><%= t :portfolio %></a></li>
+                          <li class="menuItem"><a href="#contact"><%= t :contact %></a></li>
                         </ul>
                       </div>
                     </div>
@@ -57,17 +57,15 @@
         <section class="aboutme" id="aboutme">
           <div class="container">
             <div class="heading">
-              <h2>About me</h2>
-              <p>A small introduction about my self</p>
+              <h2><%= t :about_me %></h2>
+              <p><%= t :about_me_into %></p>
             </div>
             <div class="row">
               <div class=" col-xs-12 col-sm-12 col-md-7 col-lg-7">
-                <h3>Eric Neifert</h3>
-                <h4 class="subHeading">Web Developer from Dillsburg, PA, United States</h4>
-                <p>I am web developer who loves God, my family, sports, and making things that make people's lives better. Right now I am working on training the next generation of web developers in the county of Kyrgyzstan and also doing various side projects. I have a wife who is not only awesome but also is great at graphic design works with me on various projects. I also have a 1 year old son who is a cool little guy who loves technology.</p>
-                <p>If I work with you, I truly want to make your business better and thinking through how we can use technology to do that is very exciting for me.</p>
-                <p>On this page you can find out more about my history and experiences as a programmer. If you would like to work together please fill out the contact form <a href="#contact">here</a></p>
-                <a href="#" class="bntDownload">Download a Printable Resume</a> </div>
+                <h3><%= t :eric_neifert %></h3>
+                <h4 class="subHeading"><%= t :web_dev_from_pa %></h4>
+                <%= t :eric_intro_html %>
+                <a href="#" class="bntDownload"><%= t :download_resume %></a> </div>
                 <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1 proPic"> <img src="<%= img_url_for_env("eric.jpg") %>" alt="" class="img-circle topmar"> </div>
               </div>
             </div>
@@ -77,8 +75,8 @@
           <section class="technical" id="technical">
             <div class="container">
               <div class="heading">
-                <h2>Technical Skills</h2>
-                <p>Here are things I'm good at</p>
+                <h2><%= t :technical_skills %></h2>
+                <p><%= t :things_im_good_at %></p>
               </div>
               <div class="row">
                 <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3 skillsArea">
@@ -131,21 +129,20 @@
           <section class="experience" id="experience">
             <div class="container">
               <div class="heading">
-                <h2>Work experience</h2>
-                <p>My previous associations</p>
+                <h2><%= t :work_experience %></h2>
+                <p><%= t :employment_history %></p>
               </div>
               <div class="row workDetails">
                 <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
-                  <div class="workYear">Present<br>
+                  <div class="workYear"><%= t :current %><br>
                     2012</div>
                   </div>
                   <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
                     <div class="arrowpart"></div>
                     <div class="exCon">
-                      <h4>Osh Business and Training Center / Eswebtech.com</h4>
-                      <h5>Web programmer</h5>                      
-                      <p><span class="glyphicon glyphicon-asterisk"></span>Right now I’m creating a web development training center in Osh Kyrgyzstan and also and taking personal contact jobs. You can find out more at <a href="obtc.kg">obtc.kg</a> and <a href="eswebtech.com">eswebtech.com</a></p>
-                      <p><span class="glyphicon glyphicon-asterisk"></span>ZenDesk Api: Zendesk is the largest helpdesk company in the world and they contracted me to develop their c# api wrapper. The project can be seen <a href="https://github.com/eneifert/ZendeskApi_v2">here</a></p>                      
+                      <h4><%= t :osh_business_eswebtech %></h4>
+                      <h5><%= t :web_developer %></h5>
+                      <%= t :work_hs_eswebtech_html %>
                     </div>
                   </div>
                 </div>
@@ -157,11 +154,9 @@
                     <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
                       <div class="arrowpart"></div>
                       <div class="exCon">
-                        <h4>Ritter Insurance Marketing</h4>
-                        <h5>Web Developer</h5>
-                        <p><span class="glyphicon glyphicon-asterisk"></span>Worked with a team of developers to develop C# MVC programs to assist the insurance marketing department</p>
-                        <p><span class="glyphicon glyphicon-asterisk"></span>Created the RAP project from scratch that was responsible for paying over 2000 employees each month</p>
-                        <p><span class="glyphicon glyphicon-asterisk"></span>Was one of two developers responsible for the <a href="medicareful.com">Medicareful.com</a> project</p>
+                        <h4><%= t :ritter_im %></h4>
+                        <h5><%= t :web_developer %></h5>
+                        <%= t :work_hs_ritter_html %>
                       </div>
                     </div>
                   </div>
@@ -173,11 +168,9 @@
                       <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
                         <div class="arrowpart"></div>
                         <div class="exCon">
-                          <h4>Osh Business and Training Center</h4>
-                          <h5>Team Member</h5>
-                          <p><span class="glyphicon glyphicon-asterisk"></span>Worked with the OBTC to develop businesses and hand them over to locals</p>
-                          <p><span class="glyphicon glyphicon-asterisk"></span>Developed a flexible language learning program in C# and a fully customizable keyboard using macro scripts. These programs as well as some of my other language resources are used by dozens of people all throughout Kyrgyzstan and by other team members in Asia</p>
-                          <p><span class="glyphicon glyphicon-asterisk"></span>Worked as a network administrator </p>
+                          <h4><%= t :osh_business_center %></h4>
+                          <h5><%= t :team_member %></h5>
+                          <%= t :work_hs_obtc_html %>
                         </div>
                       </div>
                     </div>
@@ -189,11 +182,9 @@
                       <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
                         <div class="arrowpart"></div>
                         <div class="exCon">
-                          <h4>Cragsoft</h4>
-                          <h5>Co-Founder</h5>
-                          <p><span class="glyphicon glyphicon-asterisk"></span>Designed and developed several Facebook applications that gathered over 1,000,000 users</p>
-                          <p><span class="glyphicon glyphicon-asterisk"></span>Developed many of the web services and tests that would geocode addresses and visually map the data in useable results for Cragsoft's vehicle routing software</p>
-                          <p><span class="glyphicon glyphicon-asterisk"></span>Spoke with potential clients, gathered information, compiled reports, and gave product demonstrations</p>
+                          <h4><%= t :cragsoft %></h4>
+                          <h5><%= t :co_founder %></h5>
+                          <%= t :work_hs_cragsoft_html %>
                         </div>
                       </div>
                     </div>
@@ -205,59 +196,52 @@
                       <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
                         <div class="arrowpart"></div>
                         <div class="exCon">
-                          <h4>Westfalia Technologies</h4>
-                          <h5>Software Developer</h5>
-                          <p><span class="glyphicon glyphicon-asterisk"></span>Worked on the base team developing their flagship warehouse management software using C#. Developed code for the user interface, core services, hand held devices, and also wrote many advanced SQL queries</p>
-                          <p><span class="glyphicon glyphicon-asterisk"></span>Deployed, tested, and troubleshot the software on live multimillion dollar warehouses and successfully met  customer deadlines</p>
-                          <p><span class="glyphicon glyphicon-asterisk"></span>During my first two weeks on a live site I identified a subtle database transaction problem and worked with my team on a solution that increased the throughput of the automated system by over 100% at Fage Yogurt</p>
-                          <p><span class="glyphicon glyphicon-asterisk"></span>Reverse engineered a TCP/IP interface to a bar code scanner and integrated it into our system</p>
-                          <p><span class="glyphicon glyphicon-asterisk"></span>Researched and wrote papers to other staff members explaining interesting concepts  in the .Net language</p>                          
+                          <h4><%= t :westfalia %></h4>
+                          <h5><%= t :software_developer %></h5>
+                          <%= t :work_hs_westfalia_html %>
                         </div>
                       </div>
                     </div>
                     <div class="row workDetails">
                       <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
                         <div class="workYear">2005 - 06<br>
-                        Internship
+                        <%= t :internship %>
                         </div>
                       </div>
                       <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
                         <div class="arrowpart"></div>
                         <div class="exCon">
-                          <h4>TechHarmony</h4>
-                          <h5>Software Developer</h5>
-                          <p><span class="glyphicon glyphicon-asterisk"></span>Designed and developed web applications for clients using ASP.Net</p>
-                          <p><span class="glyphicon glyphicon-asterisk"></span>Worked with SQL databases</p>                          
+                          <h4><%= t :tech_harm %></h4>
+                          <h5><%= t :software_developer %></h5>
+                          <%= t :work_hs_tech_harm_html %>
                         </div>
                       </div>
                     </div>
                     <div class="row workDetails">
                       <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
                         <div class="workYear">2005<br>
-                        Internship</div>
+                        <%= t :internship %></div>
                       </div>
                       <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
                         <div class="arrowpart"></div>
                         <div class="exCon">
-                          <h4>Genesis Systems</h4>
-                          <h5>Software Developer</h5>
-                          <p><span class="glyphicon glyphicon-asterisk"></span>Designed and developed medical record software for HUP using C#</p>
-                          <p><span class="glyphicon glyphicon-asterisk"></span>¨  Co-designed and implemented a large relational database</p>
+                          <h4><%= t :genesis_sys %></h4>
+                          <h5><%= t :software_developer %></h5>
+                          <%= t :work_hs_gen_html %>
                         </div>
                       </div>
                     </div>
                     <div class="row workDetails">
                       <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
                         <div class="workYear">2004<br>
-                        Internship</div>
+                        <%= t :internship %></div>
                       </div>
                       <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
                         <div class="arrowpart"></div>
                         <div class="exCon">
-                          <h4>Perfect Order</h4>
-                          <h5>Support Technician</h5>
-                          <p><span class="glyphicon glyphicon-asterisk"></span>Designed and implemented web applications using PHP</p>
-                          <p><span class="glyphicon glyphicon-asterisk"></span>Fixed bugs and errors in software</p>
+                          <h4><%= t :perfect_order %></h4>
+                          <h5><%= t :support_tech %></h5>
+                          <%= t :work_hs_perfect_html %>
                         </div>
                       </div>
                     </div>
@@ -268,8 +252,8 @@
                 <section class="education" id="education">
                   <div class="container">
                     <div class="heading">
-                      <h2>Education & Diplomas</h2>
-                      <p>What I have done in my academic career</p>
+                      <h2><%= t :education_dip %></h2>
+                      <p><%= t :what_i_did_in_school %></p>
                     </div>
                     <div class="row workDetails">
                       <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
@@ -278,10 +262,7 @@
                       <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
                         <div class="arrowpart"></div>
                         <div class="exCon">
-                          <h4>Bachelor's degree in Computer Science</h4>
-                          <h5>Shippensubrg University of PA</h5>
-                          <p><span class="glyphicon glyphicon-asterisk"></span>Graduated with honors in Computer Science from Shippensburg University of Pennsylvania</p>
-                          <p><span class="glyphicon glyphicon-asterisk"></span>Served as an officer for Upsilon Pi Epsilon. This is a nationwide Honors Society for the top students in the Computing and Information Disciplines</p>
+                          <%= t :eric_school_info_html %>
                         </div>
                       </div>
                     </div>                                      
@@ -291,16 +272,16 @@
                 <section class="protfolio" id="protfolio">
                   <div class="container">
                     <div class="heading">
-                      <h2>Portfolio</h2>
-                      <p>here's a sample of my works over the years</p>
+                      <h2><%= t :portfolio %></h2>
+                      <p><%= t :sample_of_works %></p>
                     </div>
                     <div class="portfolioFilter">
                       <ul>
-                        <li><a href="#" data-filter="*" class="current">All</a></li>
-                        <li><a href="#" data-filter=".eswebtech">OBTC / EsWebTech</a></li>
-                        <li><a href="#" data-filter=".ritter">Ritter IM</a></li>
-                        <li><a href="#" data-filter=".cragsoft">Cragsoft</a></li>
-                        <li><a href="#" data-filter=".westfalia">Westfalia</a></li>
+                        <li><a href="#" data-filter="*" class="current"><%= t :all %></a></li>
+                        <li><a href="#" data-filter=".eswebtech"><%= t :obtc_eswebtech %></a></li>
+                        <li><a href="#" data-filter=".ritter"><%= t :ritter_im_short %></a></li>
+                        <li><a href="#" data-filter=".cragsoft"><%= t :cragsoft %></a></li>
+                        <li><a href="#" data-filter=".westfalia"><%= t :westfalia %></a></li>
                       </ul>
                     </div>
                     <ul class="portfolioContainer row">                      
@@ -319,7 +300,7 @@
                       <%= render partial: "staff/portfolio", locals: {img: 'mobilepicking.jpg', big: 'mobilepicking_big.jpg', title: 'Mobile Warehouse Software',  link: '', filter: 'westfalia'} %>
 
                       <%= render partial: "staff/portfolio", locals: {img: 'routing.jpg', big: 'routing_big.jpg', title: 'Vehicle Routing Software',  link: '', filter: 'cragsoft'} %>
-                      <%= render partial: "staff/portfolio", locals: {img: 'language_learner.jpg', big: 'language_learner_big.jpg', title: 'Kyrgyz Language Program',  link: '', filter: 'cragsoft'} %>
+                      <%= render partial: "staff/portfolio", locals: {img: 'language_learner.jpg', big: 'language_learner_big.jpg', title: 'Kyrgyz Language Program',  link: 'https://github.com/eneifert/LanguageLearner', filter: 'eswebtech'} %>
                     
                       
                     </ul>
@@ -330,8 +311,8 @@
                 <section class="contact" id="contact">
                   <div class="container topCon">
                     <div class="heading">
-                      <h2>Get In Touch</h2>
-                      <p>Please feel free if you would like to have a chat.</p>
+                      <h2><%= t :get_in_touch %></h2>
+                      <p><%= t :want_to_chat %></p>
                     </div>
                   </div>
                   <div class="row mapArea">
@@ -343,8 +324,8 @@
                   <div class="container">
                     <!--contact info start-->
                     <div class="col-xs-12 col-sm-3 col-md-4 col-lg-4">
-                      <h4>Contact details</h4>
-                      <p> <i class="fa fa-map-marker fa-lg"></i>Osh Kyrgyzstan</p>
+                      <h4><%= t :contact_details %></h4>
+                      <p> <i class="fa fa-map-marker fa-lg"></i><%= t :osh_kg %></p>
                       <p> <i class="fa fa-mobile fa-lg"></i> +996 552 009 039</p>
                       <p> <i class="fa fa-envelope-o "></i> <a href="mailto:eric@obtc.kg">eric@obtc.kg</a></p>
                       <p> <i class="fa fa-link "></i> <a href="obtc.kg">obtc.kg</a></p>
@@ -352,13 +333,13 @@
                     <!--contact info end-->
                     <!--contact form start-->
                     <div class="col-xs-12 col-sm-9 col-md-8 col-lg-8 conForm">
-                      <h4>Shoot a message!</h4>
+                      <h4><%= t :write_me %></h4>
                       <div id="message"></div>
                       <form method="post" action="php/contact.php" name="cform" id="cform">
-                        <input name="name" id="name" type="text" class="col-xs-12 col-sm-6 col-md-6 col-lg-6" placeholder="Your name..." >
-                        <input name="email" id="email" type="email" class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 noMarr" placeholder="Your email..." >
-                        <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your message..."></textarea>
-                        <input type="submit" id="submit" name="send" class="submitBnt" value="Send message">
+                        <input name="name" id="name" type="text" class="col-xs-12 col-sm-6 col-md-6 col-lg-6" placeholder="<%= t :name %>..." >
+                        <input name="email" id="email" type="email" class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 noMarr" placeholder="<%= t :email %>..." >
+                        <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="<%= t :message %>..."></textarea>
+                        <input type="submit" id="submit" name="send" class="submitBnt" value="<%= t :send_message %>">
                         <div id="simple-msg"></div>
                       </form>
                     </div>

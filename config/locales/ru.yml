@@ -47,3 +47,94 @@ ru:
         name: Имя
         email: Email
         message: Сообщение
+
+# Resume
+  eric_neifert: Эрик Найферт
+
+  skills: Навыки
+  experience: Опыт Работы
+  education: Образование
+  portfolio: Портфолио
+
+  about_me: Обо мне
+  about_me_intro: Коротко обо мне
+  web_dev_from_pa: Вэб разработчик из Диллсбурга, штат Пеннсильвания, США
+  eric_intro_html: |
+      <p>Я Вэб программист, который любит Бога, свою семью, спорт и тот, кто создает то, что улучшает жизни людей. На данный момент я работаю над обучением будущего поколения вэб программистов в Кыргызстане, а также занимаюсь различным родом других проектов. У меня есть супруга, которая не просто потрясающая женщина, но и человек, имеющий талант в графическом дизайне. Поэтому мы работаем вместе над многими проектами. Также у меня есть забавный сынок, которому полтора года, и который обожает технику.</p>
+      <p>Если я работаю с Вами, я искренне хочу улучшить Ваш бизнес и продумываю пути, как для этого мы можем использовать технологию.</p>
+      <p>На этой странице Вы сможете узнать больше о моем опыте работы программистом. Если Вы хотите работать вместе, пожалуйста, заполните контактную форму<a href="#contact">here</a></p>
+  download_resume: Скачать версию для печати
+  technical_skills: Технические Навыки
+  things_im_good_at: Вот, что у меня получается хорошо
+  work_experience: Опыт Работы
+  employment_history: Вот, где я работал
+  current: Настоящее время
+  osh_business_eswebtech: Ошский Центр Обучения Бизнесу (OBTC) / EsWebTech.com
+  web_developer: Вэб Разработчик
+
+  work_hs_eswebtech_html: |
+      <p><span class="glyphicon glyphicon-asterisk"></span>На данный момент я создаю центр по обучению Вэб-разработке в г. Ош, Кыргызстан, а также работаю над проектами, предоставленными личными контактами. Вы можете узнать больше на сайтах <a href="obtc.kg">obtc.kg</a> и <a href="eswebtech.com">eswebtech.com</a></p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Я работаю в ZenDesk Api. Zendesk компания является самой масштабной компанией по оказанию технической поддержки. Я получил предложение от них разработать c# api wrapper. Здесь Вы можете просмотреть данный <a href="https://github.com/eneifert/ZendeskApi_v2">проект</a></p> 
+
+  ritter_im: Риттер Страховой Маркеттинг
+  work_hs_ritter_html: |
+      <p><span class="glyphicon glyphicon-asterisk"></span>Работа с командой программистов в разработке C# MVC программ для поддержки отдела страхового маркетинга</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Создание RAP проект с нуля, который отвечал за осуществление оплаты более 2000 работникам ежемесячно</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Был одним из двух ведущих программистов в проекте <a href="medicareful.com">Medicareful.com</a></p>
+  osh_business_center: Ошский Центр Обучения Бизнесу
+  team_member: Член команды
+  work_hs_obtc_html: |
+    <p><span class="glyphicon glyphicon-asterisk"></span>Развитие мелкого бизнеса и передача его в руки местного населения</p>
+    <p><span class="glyphicon glyphicon-asterisk"></span>Разработка гибкой обучающей программы языка в C#  и полностью настраиваемой клавиатуры с использованием макроскрипты. Эти программы как и некоторые другие мои языковые ресурсы широко используются десятками людей по всему Кыргызстану, а также другими людьми в Азии</p>
+    <p><span class="glyphicon glyphicon-asterisk"></span>Работал в качестве сетевого администратора </p>
+  cragsoft: Cragsoft
+  co_founder: Соучредитель
+  work_hs_cragsoft_html: |
+      <p><span class="glyphicon glyphicon-asterisk"></span>Создание и разработка нескольких приложений Facebook, которые собрали более 100 000 пользователей</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Разработка многих сетевых услуг и тестов, которые производили геокодирование адресов и наглядно выдавали данные в возможном для использования виде для Cragsoft программных видов трассировки</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Проведение переговоров с потенциальными клиентами, сбор информации, составление отчетов, и демонстрирование продукта</p>
+  westfalia: Westfalia Technologies
+  software_developer: Разработчик Программного Обеспечения 
+  work_hs_westfalia_html: |
+      <p><span class="glyphicon glyphicon-asterisk"></span>Работа в команде разработчиков программного обеспечения управления флагманского склада, используя C#. Разработка кода для интерфэйса пользователя, основных услуг, наладонных устройств, а также написание многих продвинутых SQL запросов</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Установка, тестирование и диагностирование программного обеспечения на прямых складах (стоящих несколько миллионов долларов). Успешно закончил работу над данным проектом в установленное клиентом время</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Во время первых недель на прямом сайте идентифицировал трудно уловимую проблему в транзакции базы данных и работал с командой над ней, что увеличило производительность автоматизированной системы компании Fage Yogurt на 100%</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Проведение реверсивного проектирования интерфэйса TCP/IP в сканнер штрихкода и интегрирование его в нашу систему</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Проведение исследовательской работы и подготовка доклада для штатных работников об  интересных концепциях в сетевом языке</p>  
+
+  internship: Cтажировка    
+  tech_harm: Tech harmony
+  work_hs_tech_harm_html: |
+      <p><span class="glyphicon glyphicon-asterisk"></span>Создание и разработка Вэб приложения для клиентов, используя ASP.Net</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Работа с базой данных SQL</p>
+  genesis_sys: Genesis Systems
+  work_hs_gen_html: |
+      <p><span class="glyphicon glyphicon-asterisk"></span>Создание и разработка программного обеспечения медицинских записей для HUP, используя C#</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Осуществление соразработки и внедрения огромной реаляционной базы данных</p>
+  perfect_order: Perfect Order
+  support_tech: Техническая поддержка
+  work_hs_perfect_html: |
+      <p><span class="glyphicon glyphicon-asterisk"></span>Создание и внедрение Вэб приложения, используя PHP</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Устранение ошибок в программном обеспечении</p>
+  
+
+  education_dip: Образование и Дипломы
+  what_i_did_in_school: Мои достижения в академической карьере
+  eric_school_info_html: |
+      <h4>Диплом степени Бакалавра в сфере Компьютерных Технологий</h4>
+      <h5>Шиппенсбургский Университет Пеннсильвании</h5>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Окончил с отличием Шиппенсбургский Университет Пеннсильвании, факультет Компютерных Технологий</p>
+      <p><span class="glyphicon glyphicon-asterisk"></span>Являлся лидером братства Upsilon Pi Epsilon. Это Сообщество Отличников дисциплины Програмирования и Информатики. </p> 
+  sample_of_works: Здесь примеры моих работ
+  all: Все
+  obtc_eswebtech: OBTC / EsWebTech
+  ritter_im_short: Риттер Страховой Маркетинг
+
+  get_in_touch: Связаться
+  want_to_chat: Если у Вас есть вопросы, пожалуйста отправьте их мне
+  contact_details: Контактная информация
+  osh_kg: Ош Кыргызстан
+
+  write_me: Напишите сообщение!
+  send_message: Отправить сообщение
+  message: Сообщение
