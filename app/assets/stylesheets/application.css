@@ -11,7 +11,9 @@
  *= require bootstrap.min
  *= require carousel
  *= require_self
- *= require_tree .
+ *= require styles
+ *= require home
+
  */
 
 /*@font-face {
