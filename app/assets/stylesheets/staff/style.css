@@ -131,7 +131,7 @@ h4.subHeading{
 
 .heading{
 	text-align:center;
-	padding-bottom:45px;
+	/*padding-bottom:45px;*/
 }
 
 .topmar{
@@ -440,7 +440,7 @@ header{
 }
 .aboutme .container{
 	padding-top:85px ;
-	padding-bottom:93px ;
+	padding-bottom:60px ;
 }
 
 
@@ -482,7 +482,7 @@ header{
 }
 .technical .container{
 	padding-top:85px ;
-	padding-bottom:69px ;
+	padding-bottom:60px;
 }
 .technical .heading p{
 	padding-bottom:41px;
@@ -572,7 +572,7 @@ header{
 }
 .experience .container{
 	padding-top:85px ;
-	padding-bottom:90px ;
+	padding-bottom:60px ;
 }
 
 .experience h2{
@@ -649,7 +649,7 @@ header{
 }
 .education .container{
 	padding-top:85px ;
-	padding-bottom:90px ;
+	padding-bottom:60px ;
 }
 
 .education h2{
@@ -692,7 +692,7 @@ header{
 }
 .protfolio .container{
 	padding-top:85px ;
-	padding-bottom:90px ;
+	padding-bottom:60px ;
 }
 
 .protfolio .heading p{
@@ -942,7 +942,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 }
 .contact .container{
 	padding-top:85px ;
-	padding-bottom:90px ;
+	padding-bottom:60px ;
 }
 
 .contact h2{
@@ -985,7 +985,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 }
 .contactDetails .container{
 	padding-top:85px ;
-	padding-bottom:90px ;
+	padding-bottom:60px ;
 }
 .contactDetails h4{
 	font-weight:600;
