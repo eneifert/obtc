@@ -342,13 +342,13 @@
                       <div id="message"></div>
 
 
-                      <form method="post" action="php/contact.php" name="cform" id="cform">
+                      <%= form_tag({controller: "emails", action: "create"}, method: "post", id: 'cform', name: 'cform') do %>                      
                         <input name="email[name]" id="name" type="text" class="col-xs-12 col-sm-6 col-md-6 col-lg-6" placeholder="<%= t :name %>..." >
                         <input name="email[email]" id="email" type="email" class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 noMarr" placeholder="<%= t :email %>..." >
                         <textarea name="email[message]" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="<%= t :message %>..."></textarea>
                         <input type="submit" id="submit" name="send" class="submitBnt" value="<%= t :send_message %>">
                         <div id="simple-msg"></div>
-                      </form>
+                      <% end %>
                     </div>
                     <!--contact form end-->
                   </div>
