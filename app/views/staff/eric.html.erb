@@ -36,6 +36,11 @@
                       <a class="navbar-brand" href="#">Menu</a> </div>
                       <div class="navbar-collapse collapse main-menu">
                         <ul class="nav navbar-nav">                          
+                          <% if I18n.locale == :en %>
+                            <a href="<%= root_with_locale_path(:locale => 'ru') + '/eric' %>">Русский язык</a>                                
+                          <% else %>
+                            <a href="<%= root_with_locale_path(:locale => 'en') + '/eric' %>">English</a>              
+                          <% end %>
                           <li class="menuItem active"><a href="#aboutme"><%= t :about %></a></li>
                           <li class="menuItem"><a href="#technical"><%= t :skills %></a></li>
                           <li class="menuItem"><a href="#experience"><%= t :experience %></a></li>
@@ -335,10 +340,12 @@
                     <div class="col-xs-12 col-sm-9 col-md-8 col-lg-8 conForm">
                       <h4><%= t :write_me %></h4>
                       <div id="message"></div>
+
+
                       <form method="post" action="php/contact.php" name="cform" id="cform">
-                        <input name="name" id="name" type="text" class="col-xs-12 col-sm-6 col-md-6 col-lg-6" placeholder="<%= t :name %>..." >
-                        <input name="email" id="email" type="email" class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 noMarr" placeholder="<%= t :email %>..." >
-                        <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="<%= t :message %>..."></textarea>
+                        <input name="email[name]" id="name" type="text" class="col-xs-12 col-sm-6 col-md-6 col-lg-6" placeholder="<%= t :name %>..." >
+                        <input name="email[email]" id="email" type="email" class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 noMarr" placeholder="<%= t :email %>..." >
+                        <textarea name="email[message]" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="<%= t :message %>..."></textarea>
                         <input type="submit" id="submit" name="send" class="submitBnt" value="<%= t :send_message %>">
                         <div id="simple-msg"></div>
                       </form>
@@ -351,12 +358,8 @@
                 <section class="footer" id="footer">
                   <div class="container">
                     <ul>
-                      <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
-                      <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
-                      <li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
-                      <li><a href="#"><i class="fa fa-pinterest fa-2x"></i></a></li>
-                      <li><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>
-                      <li><a href="#"><i class="fa fa-rss fa-2x"></i></a></li>
+                      <li><a href="https://twitter.com/eneifert"><i class="fa fa-twitter fa-2x"></i></a></li>                      
+                      <li><a href="http://www.linkedin.com/pub/eric-neifert/33/677/271"><i class="fa fa-linkedin fa-2x"></i></a></li>                      
                     </ul>
                   </div>
                 </section>
