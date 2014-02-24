@@ -292,25 +292,35 @@
                   <div class="container">
                     <div class="heading">
                       <h2>Portfolio</h2>
-                      <p>showcase of my latest works</p>
+                      <p>here's a sample of my works over the years</p>
                     </div>
                     <div class="portfolioFilter">
                       <ul>
                         <li><a href="#" data-filter="*" class="current">All</a></li>
                         <li><a href="#" data-filter=".eswebtech">OBTC / EsWebTech</a></li>
                         <li><a href="#" data-filter=".ritter">Ritter IM</a></li>
+                        <li><a href="#" data-filter=".cragsoft">Cragsoft</a></li>
                         <li><a href="#" data-filter=".westfalia">Westfalia</a></li>
                       </ul>
                     </div>
                     <ul class="portfolioContainer row">                      
                       <%= render partial: "staff/portfolio", locals: {img: 'obtc.jpg', big: 'obtc_big.jpg', title: 'Osh Business and Training Center', link: 'obtc.kg', filter: 'eswebtech'} %>
                       <%= render partial: "staff/portfolio", locals: {img: 'zendesk_api.jpg', big: 'zendesk_api_big.jpg', title: 'Zendesk C# Api', link: 'https://github.com/eneifert/ZendeskApi_v2', filter: 'eswebtech'} %>
-                      <%= render partial: "staff/portfolio", locals: {img: 'medicareful.jpg', big: 'medicareful_big.jpg', title: 'Medicareful.com',  link: 'medicareful.com', filter: 'ritter'} %>
-                      <%= render partial: "staff/portfolio", locals: {img: 'Agent_Payments.jpg', big: 'Agent_Payments_big.jpg', title: 'Ritter Agent Payments System', link: '', filter: 'ritter'} %>
+                      <%= render partial: "staff/portfolio", locals: {img: 'medicareful.jpg', big: 'medicareful_big.jpg', title: 'Medicareful.com',  link: 'medicareful.com', filter: 'ritter'} %>                    
+                      <%= render partial: "staff/portfolio", locals: {img: 'Agent_Payments.jpg', big: 'Agent_Payments_big.jpg', title: 'Ritter Agent Payments System', link: '', filter: 'ritter'} %>                      
+                      
+                      <%= render partial: "staff/portfolio", locals: {img: 'mega_cloud.jpg', big: 'mega_cloud_big.jpg', title: 'Facebook app: Mega Cloud',  link: '', filter: 'cragsoft'} %>
+                      <%= render partial: "staff/portfolio", locals: {img: 'wlm.jpg', big: 'wlm.jpg', title: 'Facebook app: Who is like me',  link: '', filter: 'cragsoft'} %>
+
+
                       <%= render partial: "staff/portfolio", locals: {img: 'ccm.jpg', big: 'ccm_big.jpg', title: 'Colonel Compassion House',  link: '', filter: 'eswebtech'} %>
                       <%= render partial: "staff/portfolio", locals: {img: 'quoteengine.jpg', big: 'quoteengine_big.jpg', title: 'Insurance Quote Engine',  link: '', filter: 'ritter'} %>
                       <%= render partial: "staff/portfolio", locals: {img: 'zendesk.jpg', big: 'zendesk_big.jpg', title: 'Zendesk Support System',  link: '', filter: 'ritter'} %>                      
                       <%= render partial: "staff/portfolio", locals: {img: 'mobilepicking.jpg', big: 'mobilepicking_big.jpg', title: 'Mobile Warehouse Software',  link: '', filter: 'westfalia'} %>
+
+                      <%= render partial: "staff/portfolio", locals: {img: 'routing.jpg', big: 'routing_big.jpg', title: 'Vehicle Routing Software',  link: '', filter: 'cragsoft'} %>
+                      <%= render partial: "staff/portfolio", locals: {img: 'language_learner.jpg', big: 'language_learner_big.jpg', title: 'Kyrgyz Language Program',  link: '', filter: 'cragsoft'} %>
+                    
                       
                     </ul>
                   </div>
