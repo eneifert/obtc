@@ -452,6 +452,17 @@ header{
 	margin-top:-62px !important;
 }
 
+.aboutme a {
+	border-radius: .25em;	
+}
+
+.aboutme p a {	
+	padding: .2em .6em .3em;
+	background-color: #f5534b;
+	color: #fff;
+	text-align: center;
+}
+
 .bntDownload{
 	font-size:16px;
 	font-family: 'Open Sans', sans-serif;
