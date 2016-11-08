@@ -21,7 +21,7 @@ module Obtc
 
     config.time_zone = 'Almaty' #GMT +6
     
-    config.i18n.default_locale = :en    
+    config.i18n.default_locale = :ru    
     I18n.enforce_available_locales = false
   end
 end
