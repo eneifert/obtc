@@ -54,17 +54,33 @@
 
 }
 
+img .big_carousel_img{
+     display: block;
+   }
 
-img .smaller_than_1400 {
+img .med_carousel_img {
+   display: none;
+}
+img .small_carousel_img {
    display: none;
 }
 
 @media screen and (max-width: 1400px) {
-   img .larger_than_1400{
+   img .big_carousel_img{
      display: none;
    }
 
-   img .smaller_than_1400{
+   img .med_carousel_img{
+     display: block;
+   } 
+}
+
+@media screen and (max-width: 800px) {
+   img .big_carousel_img{
+     display: none;
+   }
+
+   img .small_carousel_img{
      display: block;
    } 
 }

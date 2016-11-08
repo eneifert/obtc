@@ -11,8 +11,9 @@
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          <img src="/june_cashmere_website.jpg" alt="" class="larger_than_1400">         
-          <img src="/june_cashmere_website_smaller.jpg" alt="" class="smaller_than_1400">                    
+          <img src="/june_cashmere_website_big.jpg" alt="" class="big_carousel_img">         
+          <img src="/june_cashmere_website_med.jpg" alt="" class="med_carousel_img">                    
+          <img src="/june_cashmere_website_small.jpg" alt="" class="small_carousel_img">                    
           <div class="container">
             <div class="carousel-caption">              
               <p style="position: relative; top: 60px;"><iframe width="605" height="340" src="https://www.youtube.com/embed/lQWRDnsw5m8" frameborder="0" allowfullscreen></iframe></p>
@@ -21,9 +22,9 @@
           </div>
         </div>  
         <div class="item ">
-          <img src="/goat2_compressed.jpg" alt="" class="larger_than_1400">          
-          <img src="/goat2_smaller.jpg" alt="" class="smaller_than_1400">          
-
+          <img src="/goat2_big.jpg" alt="" class="big_carousel_img">          
+          <img src="/goat2_med.jpg" alt="" class="med_carousel_img">          
+          <img src="/goat2_small.jpg" alt="" class="small_carousel_img">                  
           <div class="container">
             <div class="carousel-caption">
               <h1><%= t :developing_cashmere %></h1>
@@ -53,8 +54,9 @@
           </div>
         </div>  
         <div class="item">          
-          <img src="/computers_small.jpg" alt="" class="larger_than_1400">          
-          <img src="/computers_smaller.jpg" alt="" class="smaller_than_1400">          
+          <img src="/computers_big.jpg" alt="" class="big_carousel_img">          
+          <img src="/computers_med.jpg" alt="" class="med_carousel_img">          
+          <img src="/computers_small.jpg" alt="" class="small_carousel_img">          
           <div class="container">
             <div class="carousel-caption">
               <h1><%= t :webdevelopment %></h1>
@@ -112,10 +114,15 @@
 var app_ready = function() {
 
   if($( document ).width() > 1400){
-    $('.smaller_than_1400').remove();
+    $('.med_carousel_img').remove();
+    $('.small_carousel_img').remove();
   }
-  else{
-    $('.larger_than_1400').remove();
+  else if($( document ).width() <= 800){
+    $('.big_carousel_img').remove();
+    $('.med_carousel_img').remove();
+  } else {
+    $('.big_carousel_img').remove();
+    $('.small_carousel_img').remove();
   }
 
   
