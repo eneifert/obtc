@@ -7,6 +7,7 @@
         <li data-target="#myCarousel" data-slide-to="1" ></li>        
         <li data-target="#myCarousel" data-slide-to="2" ></li>        
         <li data-target="#myCarousel" data-slide-to="3" ></li>
+        <li data-target="#myCarousel" data-slide-to="4" ></li>
       </ol>
       <div class="carousel-inner">
         <div class="item active">
@@ -32,6 +33,26 @@
           </div>
         </div>      
         <div class="item">          
+          <img src="/lines.png" alt="" >                    
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="flexbox-container">
+                  <div class="flex_center">
+                    <h1><%= t :check_out_our_online_classifieds %></h1>                    
+                    <a href="http://alsat.kg"><img src="/alsat_black.png" style="height:100px;" alt="" ></a>
+                  </div>
+                </div>
+              </div>              
+              <div class="col-sm-6">
+                <div class="flexbox-container">
+                  <img src="/alsat_tablet.png" style="height:425px;" alt="" >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <div class="item">          
           <img src="/computers_small.jpg" alt="" class="larger_than_1400">          
           <img src="/computers_smaller.jpg" alt="" class="smaller_than_1400">          
           <div class="container">
@@ -42,6 +63,7 @@
             </div>
           </div>
         </div>  
+            
         <div class="item">
           <img src="<%= img_url_for_env("chalkboard_small.jpg") %>" alt="">                    
           <div class="container">

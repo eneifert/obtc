@@ -31,3 +31,20 @@
 .no-bottom-margin {
   margin-bottom:0px;
 }
+
+.flexbox-container {
+	height: 500px;
+	color: #eee;
+
+	display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center
+}
+.flex_center {
+
+}

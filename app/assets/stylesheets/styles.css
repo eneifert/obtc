@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('glyphicons-halflings-regular.eot');
+  src: url('glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),                       
+       url('/assets/glyphicons-halflings-regular.woff') format('woff'), 
+       url('glyphicons-halflings-regular.ttf') format('truetype'), 
+       url('glyphicons-halflings-regular.svg') format('svg');
+}
+
+.navbar {
+  margin: 0px;
+}
+
+.large-font {
+	font-size: 50px;
+}
+
+.navbar-brand img { height: 60px;}
+.navbar-right { margin-top: 20px;}
+.navbar-right a {
+	font-size: 17px;
+}
+
+.first-row {
+  margin-top: 120px;
+}
+
+.contact-us {
+  border-radius: 10px;
+  border: 2px solid #999;
+  padding: 0px 0px 20px 0px;
+}
+.contact-us form {
+  padding-top: 20px;
+}
+
+.main-container {
+  
+}
+
+.logo {
+  height: 60px;
+  width: 500px;  
+}
+
+@media (max-width: 768px) {
+  .hide_on_mobile {
+    display:none;
+  }
+
+}
+
+
+img .smaller_than_1400 {
+   display: none;
+}
+
+@media screen and (max-width: 1400px) {
+   img .larger_than_1400{
+     display: none;
+   }
+
+   img .smaller_than_1400{
+     display: block;
+   } 
+}
+
