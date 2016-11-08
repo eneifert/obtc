@@ -5,10 +5,20 @@
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1" ></li>        
-        <li data-target="#myCarousel" data-slide-to="2" ></li>
+        <li data-target="#myCarousel" data-slide-to="2" ></li>        
+        <li data-target="#myCarousel" data-slide-to="3" ></li>
       </ol>
       <div class="carousel-inner">
         <div class="item active">
+          <img src="/june_cashmere_website.jpg" alt="">                    
+          <div class="container">
+            <div class="carousel-caption">              
+              <p style="position: relative; top: 60px;"><iframe width="605" height="340" src="https://www.youtube.com/embed/lQWRDnsw5m8" frameborder="0" allowfullscreen></iframe></p>
+              <p style="margin-top:60px;"><a class="btn btn-lg btn-primary" href="http://www.junecashmere.com" target="_blank" role="button">junecashmere.com</a></p>
+            </div>
+          </div>
+        </div>  
+        <div class="item ">
           <img src="<%= img_url_for_env("goat2_small.jpg") %>" alt="">          
           <div class="container">
             <div class="carousel-caption">
@@ -17,7 +27,7 @@
               <p><a class="btn btn-lg btn-primary" href="<%= projects_cashmere_url %>" role="button"><%= t :find_out_more %></a></p>
             </div>
           </div>
-        </div>  
+        </div>      
         <div class="item">
           <img src="<%= img_url_for_env("computers_small.jpg") %>" alt="">                    
           <div class="container">

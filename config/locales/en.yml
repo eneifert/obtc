@@ -38,8 +38,9 @@ en:
   submit: Submit
   name: Name  
   email: Email
-  email_success: Thanks for writing us, hopefully someone should get gack to you soon!
+  email_success: Thanks for writing us, hopefully someone should get gack to you soon  
 
+  june_cashmere_website: Buy 100% Kyrgyz Cashmere
   helpers:
     label:
       email:
