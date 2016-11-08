@@ -19,7 +19,9 @@
           </div>
         </div>  
         <div class="item ">
-          <img src="<%= img_url_for_env("goat2_small.jpg") %>" alt="">          
+          <img src="/goat2_compressed.jpg" alt="" class="larger_than_1400">          
+          <img src="/goat2_smaller.jpg" alt="" class="smaller_than_1400">          
+
           <div class="container">
             <div class="carousel-caption">
               <h1><%= t :developing_cashmere %></h1>
@@ -80,3 +82,22 @@
       </div><!-- /.row -->
   
     </div><!-- /.container -->
+
+<script type="text/javascript">
+
+var app_ready = function() {
+
+  if($( document ).width() > 1400){
+    $('.smaller_than_1400').remove();
+  }
+  else{
+    $('.larger_than_1400').remove();
+  }
+
+  
+}
+
+$(document).ready(app_ready);
+$(document).on('page:load', app_ready);
+
+</script>
