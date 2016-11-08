@@ -11,7 +11,7 @@
   		     end
   		     %>
 		
-			 <%= form_for @email do |email| %>					
+			 <%= form_for @email, html: {class: "post-form",  :honeypot => true } do |email| %>								 
 
 				<div class="form-group">
 				 	<%= email.label :name %>
